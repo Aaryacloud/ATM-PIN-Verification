@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int correct_pin = 2312;
+    int entered_pin;
+    int i;
+    
+    for(i=1; i<=3; i++) {
+        printf("ENTER PIN: ");
+        scanf("%d", &entered_pin);
+        
+        if(entered_pin == correct_pin) {
+            printf("Successful\n");
+            break;
+        } else {
+            printf("Wrong Pin\n");
+        }
+    }
+
+if (i > 3) {
+    printf("Card Rejected\n");
+}
+
+return 0;
+}
